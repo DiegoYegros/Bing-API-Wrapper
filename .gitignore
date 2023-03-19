@@ -1,0 +1,4 @@
+test.json
+cookies.json
+# Ignore every file ending in JSON
+*.json

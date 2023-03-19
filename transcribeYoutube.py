@@ -2,7 +2,7 @@ from pytube import YouTube
 import asyncio
 import trans
 import bingChatAPI as bingChat
-from os import system, path as p
+from os import system, path as p, remove
 def download_audio(link):
     yt = YouTube(link)
     stream = yt.streams.filter(only_audio=True).first()
@@ -15,7 +15,9 @@ async def main():
   while (True):
     system("clear")
     link = input("Ingresa enlace para transcribir audio: ")
-    transcript = trans.transcribe(download_audio(link))
+    audio = download_audio(link)
+    transcript = trans.transcribe(audio)
+    remove(audio)
     print(f"Bing Chat: {await bingChat.givenTranscription(transcript)}")
     userInput = input("Deseas elegir video? (Presiona enter para continuar, N para salir) ")
     if (userInput.lower() == "n"):

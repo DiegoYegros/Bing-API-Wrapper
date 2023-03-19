@@ -1,6 +1,6 @@
 You will need python 3.9 or 3.10 to get Pytorch working.
 after that, pip install {libraries}
-![image](https://user-images.githubusercontent.com/64743423/226199355-eef9e8eb-02f4-4845-b27d-5bb87cf32cfb.png)
+![WhatsApp Image 2023-03-19 at 3 13 41 PM](https://user-images.githubusercontent.com/64743423/226199401-e199f1d1-8392-4cbd-963e-e8b81178c0fb.jpeg)
 
 You also will need to download Cookie-editor extension for Edge. After you installed it, go to Bing.com and export your cookies. Remember that for this to work you need to have the New Bing.
 
